@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show More Comments</title>
+    <style>
+        /* Gaya default untuk komentar */
+        .comment {
+            display: none;
+            /* Sembunyikan komentar secara default */
+        }
+
+        /* Gaya tombol "Show More" */
+        #showMoreButton {
+            display: block;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <a href="index.html">index html</a> -->
+
+    <!-- Komentar -->
+    <div class="comment">Comment 1</div>
+    <div class="comment">Comment 2</div>
+    <div class="comment">Comment 3</div>
+    <div class="comment">Comment 4</div>
+
+    <!-- Tombol "Show More" -->
+    <div id="showMoreButton">Show More</div>
+
+    <script>
+        document.getElementById('showMoreButton').addEventListener('click', function () {
+            // Ambil semua elemen komentar
+            var comments = document.querySelectorAll('.comment');
+
+            // Iterasi melalui setiap elemen komentar
+            comments.forEach(function (comment) {
+                // Ubah display dari 'none' menjadi 'block' untuk menampilkan komentar
+                comment.style.display = 'block';
+            });
+
+            // Sembunyikan tombol "Show More" setelah semua komentar ditampilkan
+            this.style.display = 'none';
+        });
+    </script>
+
+</body>
+
+</html>

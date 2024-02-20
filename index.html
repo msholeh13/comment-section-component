@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Section Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- <a href="new.html">new html</a> -->
+    <div class="container">
+
+        <h2>Comments</h2>
+        <div class="user-comments gap-comments">
+            <div class="profile-user">
+                <img src="assets/images/john_doe.svg" alt="John Doe" class="picture-user" id="picture-user">
+                <div class="user-name" id="user-name">John Doe</div>
+            </div>
+            <!-- <div class="user-comment-section" id="user-comment">
+                I just tried this recipe and it was amazing! The instructions were clear and easy to follow, and the end
+                result was delicious. I will definitely be making this again. Thanks for sharing!
+            </div> -->
+            <textarea name="user-comment" id="user-comment-input" cols="30"
+                rows="3">I just tried this recipe and it was amazing! The instructions were clear and easy to follow, and the end result was delicious. I will definitely be making this again. Thanks for sharing!</textarea>
+            <hr>
+            <div class="tools">
+                <div class="tools-text">
+                    <img src="assets/images/bold.svg" alt="Bold">
+                    <img src="assets/images/italic.svg" alt="Italic">
+                    <img src="assets/images/link.svg" alt="Link">
+                </div>
+                <button id="btnComment" onclick="newComment()">Comment</button>
+            </div>
+        </div>
+
+        <div class="people-comments gap-comments" id="people-comments">
+            <div class="comment-section">
+                <div class="profile-user">
+                    <img src="assets/images/jane_doe.svg" alt="Jane Doe" class="picture-user">
+                    <div class="user-name">Jane Doe</div>
+                </div>
+                <div class="user-comment-section">
+                    I really appreciate the insights and perspective shared in this article. It's definitely given me
+                    something to think about and has helped me see things from a different angle. Thank you for writing
+                    and
+                    sharing!
+                </div>
+                <div class="vote-button">
+                    <img src="assets/images/arrow_up.svg" alt="Arrow Up" class="arrow-up">
+                    <img src="assets/images/arrow_down.svg" alt="Arrow Down" class="arrow-down">
+                    <span class="time">5 min ago</span>
+                </div>
+            </div>
+
+            <div class="comment-section">
+                <div class="profile-user">
+                    <img src="assets/images/jane_doe.svg" alt="Jane Doe" class="picture-user">
+                    <div class="user-name">Jane Doe</div>
+                </div>
+                <div class="user-comment-section">
+                    I really appreciate the insights and perspective shared in this article. It's definitely given me
+                    something to think about and has helped me see things from a different angle. Thank you for writing
+                    and
+                    sharing!
+                </div>
+                <div class="vote-button">
+                    <img src="assets/images/arrow_up.svg" alt="Arrow Up" class="arrow-up">
+                    <img src="assets/images/arrow_down.svg" alt="Arrow Down" class="arrow-down">
+                    <span class="time">5 min ago</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="load-more">Load More</div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
